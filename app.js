@@ -4,6 +4,7 @@ var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 var flash = require('connect-flash');
 var async = require('async');
+var passport = require('passport');
 //Routes
 var checkinRoutes = require('./routes/checkin');
 var checkoutRoutes = require('./routes/checkout');
@@ -24,9 +25,12 @@ mongoose.connect(MongoURI, { useUnifiedTopology: true, useNewUrlParser: true });
 //for flash messages
 app.use(require('express-session')({
     secret: "pawan is the best guy",
-    resave: false,
-    saveUninitialized: false
+    resave: true,
+    saveUninitialized: true
 }));
+
+app.use(passport.initialize());
+app.use(passport.session())
 
 app.use(flash());
 app.use(function (req, res, next) {

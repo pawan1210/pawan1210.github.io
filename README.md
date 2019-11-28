@@ -11,18 +11,19 @@ Entry Management Software with check-in and check-out functionality.The project 
 # How it works?
 1. *Firstly visitor checks in and his/her details are stored in the visitor db.*
 2. *Then when he/she checks out, details from visitor db are removed and added into the checkout db.*
-3. *After check-in the host gets an email and sms listing out the details of visitor*.
-4. *Fast2Sms api used here only allows Non-DND numbers. DND numbers will not get any type of SMS.
+3. *After check-in the host gets an email and sms listing out the details of visitor.*
+4. *Fast2Sms api used here only allows Non-DND numbers. DND numbers will not get any type of SMS.*
 4. *While checking out, if the entered e-mail is not found in the visitor db then a message appears saying that the person needs to      checkin.*
-5. *After check-out the visitor also gets an email listing out his/her visit details.
+5. *After check-out the visitor also gets an email listing out his/her visit details.*
 6. *After every process the person is redirected to the landing page.*
 
 # Installation #
 ---
 1. Use 'npm install' to install all the dependencies listed in package.json file.
-```bash
-npm install
-```
+   
+   ```bash
+    npm install
+    ```
 2. Add your credentials in routes/checkin.js
     ```javascript
     var transporter = nodemailer.createTransport({

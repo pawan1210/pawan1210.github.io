@@ -8,6 +8,15 @@ Entry Management Software with check-in and check-out functionality.The project 
 * [NodeMailer](https://nodemailer.com/about/) - Node module used for sending mails.
 * [fast2sms Api](https://www.fast2sms.com/dashboard/sms/bulk)- Used for sending SMS.
 
+# How it works?
+1. *Firstly visitor checks in and his/her details are stored in the visitor db.*
+2. *Then when he/she checks out, details from visitor db are removed and added into the checkout db.*
+3. *After check-in the host gets an email and sms listing out the details of visitor*.
+4. *Fast2Sms api used here only allows Non-DND numbers. DND numbers will not get any type of SMS.
+4. *While checking out, if the entered e-mail is not found in the visitor db then a message appears saying that the person needs to      checkin.*
+5. *After check-out the visitor also gets an email listing out his/her visit details.
+6. *After every process the person is redirected to the landing page.*
+
 # Installation #
 ---
 Use 'npm install' to install all the dependencies listed in package.json file.
@@ -54,17 +63,18 @@ npm start
 ![check-out page](https://i.imgur.com/K5zaZZS.jpg)
 
 # Email and SMS
-After check-in host will an e-mail listing the details of visitor.
-*Check-in*
+
+### *Check-in* ###
 ![email](https://i.imgur.com/z4JKsM4.jpg)
-*Check-out*
+
+### *Check-out* ###
 ![email](https://i.imgur.com/xOLpCrm.jpg)
-*SMS*
-This SMS contains the a phone number that was used to create account on fast2sms.com and sms is only sent to **Non-DND Numbers**
+
+### *SMS* ###
 ![SMS](https://i.imgur.com/zgJLkma.jpg)
 
 # Database Models
-* Visitor Schema - Check-in details are stored in visitor collection.
+### * Visitor Schema - Check-in details are stored in visitor collection. ###
 ```javascript
 var visitorSchema = new mongoose.Schema({
     name: String,
@@ -76,7 +86,7 @@ var visitorSchema = new mongoose.Schema({
     checkin: { type: Date, default: new Date() }
 });
 ```
-* Check-out Schema
+### * Check-out Schema ###
 ```javascript
 var checkoutSchema = new mongoose.Schema({
     name: String,
@@ -89,7 +99,8 @@ var checkoutSchema = new mongoose.Schema({
 ```
 # Deployment
 This app is deployed using Heroku.
-#Contact Details
+
+# Contact Details
 1. Name:Pawan Saggu
 2. Phone:8901217101
 3. Email- pawansaggu007@gmail.com

@@ -19,38 +19,41 @@ Entry Management Software with check-in and check-out functionality.The project 
 
 # Installation #
 ---
-Use 'npm install' to install all the dependencies listed in package.json file.
+1. Use 'npm install' to install all the dependencies listed in package.json file.
 ```bash
 npm install
 ```
-Add your credentials in routes/checkin.js
-```javascript
-var transporter = nodemailer.createTransport({
-    service: "gmail",
-    auth: {
-        user: "xyz@gmail.com",
-        pass: 'abc'
-    }
-});
-var mailOptions = {
-    from: 'xyz@gmail.com',
-    to: "",
-    subject: "",
-    text: ""
-};
-```
-Allow nodemailer to access your gmail account
-(https://www.google.com/settings/security/lesssecureapps)
+2. Add your credentials in routes/checkin.js
+    ```javascript
+    var transporter = nodemailer.createTransport({
+        service: "gmail",
+        auth: {
+            user: "xyz@gmail.com",
+            pass: 'abc'
+        }
+    });
+    var mailOptions = {
+        from: 'xyz@gmail.com',
+        to: "",
+        subject: "",
+        text: ""
+    };
+    ```
+3. Allow nodemailer to access your gmail account
+    * (https://www.google.com/settings/security/lesssecureapps)
 
-Run application
-```
-npm start
-```
+4. Run application
+    ```
+    npm start
+    ```
+
 # Structure
+---
 
 ![Structure](https://i.imgur.com/jzkE5GB.jpg)
 
 # Interface #
+---
  ### Landing Page ### 
  * This page has 2 buttons in the center.
     *Check-in* - It goes to check-in route
@@ -63,7 +66,7 @@ npm start
 ![check-out page](https://i.imgur.com/K5zaZZS.jpg)
 
 # Email and SMS
-
+---
 ### *Check-in* ###
 ![email](https://i.imgur.com/z4JKsM4.jpg)
 
@@ -74,7 +77,9 @@ npm start
 ![SMS](https://i.imgur.com/zgJLkma.jpg)
 
 # Database Models
+---
 ### * Visitor Schema - Check-in details are stored in visitor collection. ###
+
 ```javascript
 var visitorSchema = new mongoose.Schema({
     name: String,

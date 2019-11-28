@@ -37,7 +37,8 @@ Run application
 ```
 npm start
 ```
-Structure
+# Structure
+
 ![Structure](https://i.imgur.com/jzkE5GB.jpg)
 
 # Interface #
@@ -45,22 +46,22 @@ Structure
  * This page has 2 buttons in the center.
     *Check-in* - It goes to check-in route
     *Check-out*- It goes to check-out route
- ![landingpage](https://drive.google.com/open?id=109L_whUZSaKUS2YzGKtzSew9xX7oe654)
+ ![landingpage](https://i.imgur.com/t21JqYJ.jpg)
 
 ### Check-in Page ###
-![check-in page](https://drive.google.com/open?id=13h-cU1GVB3i3cJEuQVD7IRjnRvUZ83Xc)
+![check-in page](https://i.imgur.com/VUneSLJ.jpg)
 ### Check-out Page ###
-![check-out page](https://drive.google.com/open?id=1m7J_Vhr0R_k3nOkGATYB6RlFmJgBoFe7)
+![check-out page](https://i.imgur.com/K5zaZZS.jpg)
 
 # Email and SMS
 After check-in host will an e-mail listing the details of visitor.
 *Check-in*
-![email](https://drive.google.com/open?id=1YH6jAxQ5n8qPq0R2PPypmnKPCkyUfOlm)
+![email](https://i.imgur.com/z4JKsM4.jpg)
 *Check-out*
-![email](https://drive.google.com/open?id=1wZ3TiE5KFm2uyRt0JZk9J4EARJ01hgR0)
+![email](https://i.imgur.com/xOLpCrm.jpg)
 *SMS*
 This SMS contains the a phone number that was used to create account on fast2sms.com and sms is only sent to **Non-DND Numbers**
-![SMS](https://drive.google.com/open?id=1JgJx0-I_rCP4GRHMOD4_CkZ9cvKWuua-)
+![SMS](https://i.imgur.com/zgJLkma.jpg)
 
 # Database Models
 * Visitor Schema - Check-in details are stored in visitor collection.

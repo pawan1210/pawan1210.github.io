@@ -57,8 +57,8 @@ Entry Management Software with check-in and check-out functionality.The project 
 ---
  ### Landing Page ### 
  * This page has 2 buttons in the center.
-    *Check-in* - It goes to check-in route
-    *Check-out*- It goes to check-out route
+    * *Check-in* - It goes to check-in route
+    * *Check-out*- It goes to check-out route
  ![landingpage](https://i.imgur.com/t21JqYJ.jpg)
 
 ### Check-in Page ###

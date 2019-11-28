@@ -39,7 +39,7 @@ Run application
 npm start
 ```
 Structure
-![Structure](https://drive.google.com/file/d/1Kfh0HT5N9wZ0j3OCp7mGkntR6zRu7RL0/view "Structure")
+![Structure](https://ibb.co/qy4TZk9)
 
 # Interface #
  ### Landing Page ### 

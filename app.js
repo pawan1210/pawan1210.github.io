@@ -3,19 +3,17 @@ var app = express();
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 var flash = require('connect-flash');
-var async = require('async');
+var session = require('express-session');
+var MongoStore = require('connect-mongo')(session);
 var passport = require('passport');
 //Routes
 var checkinRoutes = require('./routes/checkin');
 var checkoutRoutes = require('./routes/checkout');
-//-------
+
+
 
 var MongoURI = "mongodb+srv://pawan:ps199912@cluster0-y6m1y.mongodb.net/test?retryWrites=true&w=majority";
 mongoose.connect(MongoURI, { useUnifiedTopology: true, useNewUrlParser: true });
-
-
-
-
 
 
 
@@ -26,7 +24,8 @@ mongoose.connect(MongoURI, { useUnifiedTopology: true, useNewUrlParser: true });
 app.use(require('express-session')({
     secret: "pawan is the best guy",
     resave: true,
-    saveUninitialized: true
+    saveUninitialized: true,
+    store: new MongoStore({ url: MongoURI })
 }));
 
 app.use(passport.initialize());

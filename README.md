@@ -38,7 +38,7 @@ Run application
 npm start
 ```
 Structure
-![Structure](https://ibb.co/qy4TZk9)
+![Structure](https://i.imgur.com/jzkE5GB.jpg)
 
 # Interface #
  ### Landing Page ### 

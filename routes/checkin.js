@@ -32,12 +32,12 @@ uni.headers({
 var transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
-        user: "pawansggu@gmail.com",
-        pass: 'ps199912'
+        user: "Enter gmail account",
+        pass: 'Enter Password'
     }
 });
 var mailOptions = {
-    from: 'pawansggu@gmail.com',
+    from: 'Gmail account entered above',
     to: "",
     subject: "",
     text: ""

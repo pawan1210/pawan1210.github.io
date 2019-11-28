@@ -57,7 +57,7 @@ router.post("/checkout", function (req, res) {
                 } else {
                     mailOptions.text = checkOut(user);
                     mailOptions.to = outMail;
-                    mailOptions.subject = "Check-out Detals"
+                    mailOptions.subject = "Check-out Details"
                     transporter.sendMail(mailOptions, function (err, info) {
                         if (err) {
                             console.log(err);

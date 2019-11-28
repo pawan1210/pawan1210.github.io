@@ -10,7 +10,7 @@ var checkoutRoutes = require('./routes/checkout');
 //-------
 
 var MongoURI = "mongodb+srv://pawan:ps199912@cluster0-y6m1y.mongodb.net/test?retryWrites=true&w=majority";
-mongoose.connect(MongoURI, { useNewUrlParser: true });
+mongoose.connect(MongoURI, { useUnifiedTopology: true, useNewUrlParser: true });
 
 
 

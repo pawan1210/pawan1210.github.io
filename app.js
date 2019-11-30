@@ -5,7 +5,7 @@ var mongoose = require('mongoose');
 var flash = require('connect-flash');
 var session = require('express-session');
 var MongoStore = require('connect-mongo')(session);
-var passport = require('passport');
+
 //Routes
 var checkinRoutes = require('./routes/checkin');
 var checkoutRoutes = require('./routes/checkout');
@@ -27,9 +27,6 @@ app.use(require('express-session')({
     saveUninitialized: true,
     store: new MongoStore({ url: MongoURI })
 }));
-
-app.use(passport.initialize());
-app.use(passport.session())
 
 app.use(flash());
 app.use(function (req, res, next) {

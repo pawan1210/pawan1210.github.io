@@ -1,0 +1,46 @@
+body{
+    padding-top: 70px;
+    margin:0;
+    background-image: url("https://wallpaperplay.com/walls/full/c/f/2/107667.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+
+}
+
+.navbar-default{
+    background-color:rgba(0,0,0,0.3);
+    border: 0;
+    box-shadow: none;
+}
+.navbar-default .navbar-brand {
+ 
+  color: #bab5b5;
+ 
+}
+#landing-header {
+  position: relative;
+  text-align: center;
+  padding-top: 34vh;
+}
+#landing-header .btn{
+    background-color:#b5e8bd;
+}
+label{
+    color:#bbc7bd;
+}
+input[type="text"],input[type="email"],input[type="tel"]{
+    background-color: #b4edbd;
+}
+
+.form-group .check{
+    background-color:#303631;
+    color:white;
+    border:0;
+}
+#landing-header .check{
+    background-color:#303631;
+    color:white;
+    border:0;
+
+}
+

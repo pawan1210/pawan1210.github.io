@@ -204,17 +204,31 @@ main#home h1 {
 }
 
 .about-info {
-  display: grid;
-  grid-gap: 30px;
-  grid-template-areas: "bioimage bio bio" "job1 job2 job3";
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-wrap: wrap;
 }
-.about-info .bio-image {
-  grid-area: bioimage;
-  margin: auto;
-  border-radius: 50%;
-  border: #eece1a 3px solid;
+.job {
+  width: 100%;
 }
+.experience-info {
+  display: flex;
+  justify-content: center;
+}
+
+.job-title {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  padding: 0;
+  margin:0;
+}
+
+.company-name {
+  font-size: 25px;
+  padding: 0;
+  margin:0;
+}
+
 .about-info .bio {
   grid-area: bio;
   font-size: 1.5rem;
@@ -252,7 +266,7 @@ main#home h1 {
 .boxes {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: left;
   align-items: center;
   margin-top: 1rem;
 }

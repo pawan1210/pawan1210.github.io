@@ -1,110 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+      crossorigin="anonymous"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
-    integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Work Experience</title>
+  </head>
 
-  <link rel="stylesheet" href="css/main.css" />
-  <title>About Me</title>
-</head>
-
-<body>
-  <header>
-    <div class="menu-btn">
-      <div class="btn-line"></div>
-      <div class="btn-line"></div>
-      <div class="btn-line"></div>
-    </div>
-
-    <nav class="menu">
-      <div class="menu-branding">
-        <div class="portrait"></div>
-      </div>
-      <ul class="menu-nav">
-        <li class="nav-item">
-          <a href="index.html" class="nav-link">
-            Home
-          </a>
-        </li>
-        <li class="nav-item current">
-          <a href="about.html" class="nav-link">
-            About Me
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="work.html" class="nav-link">
-            My Work
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="contact.html" class="nav-link">
-            How To Reach Me
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-
-  <main id="about">
-    <h1 class="lg-heading">
-      About
-      <span class="text-secondary">Me</span>
-    </h1>
-    <h2 class="sm-heading">
-      Let me tell you a few things...
-    </h2>
-    <div class="about-info">
-      <img src="me.jpg" alt="John Doe" class="bio-image" />
-
-      <div class="bio">
-        <h3 class="text-secondary">BIO</h3>
-        <p>
-          - Currently working as SDE-2 @ Smallcase
-          - Tech Stack -> JavaScript ( Node.js + TypeScript ), Golang, MongoDB, Kafka, AWS ( S3, Lambda )
-          - Problem Solving - Has solved about 450 questions on Leetcode. <a href="https://leetcode.com/pawan1210"> Link to profile </a> 
-          - Proficient in LLD with Multithreading and Concurrency.
-        </p>
+  <body>
+    <header>
+      <div class="menu-btn">
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
       </div>
 
-      <div class="job job-1">
-        <h3>PayPal</h3>
-        <h6>SDE-1 FullStack</h6>
-        <p>
-          - Working in Risk Org which provide Chargeback Protection service to merchants. I am working on both Backend and Frontend sides.
-          - Tech Stack - Java, React.js, MySQL
-        </p>
+      <nav class="menu">
+        <div class="menu-branding">
+          <div class="portrait"></div>
+        </div>
+        <ul class="menu-nav">
+          <li class="nav-item current">
+            <a href="index.html" class="nav-link"> Home </a>
+          </li>
+          <li class="nav-item">
+            <a href="tech-stack.html" class="nav-link"> Tech-Stack </a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link"> Work Experience </a>
+          </li>
+          <li class="nav-item">
+            <a href="work.html" class="nav-link"> My Work </a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link"> How To Reach Me </a>
+          </li>
+          <li class="nav-item">
+            <a href="comingsoon.html" class="nav-link"> Coming Soon </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="about">
+      <h1 class="lg-heading">
+        Work 
+        <span class="text-secondary">Experience</span>
+      </h1>
+      <div class="about-info">
+        <div class="bio">
+          <h3 class="text-secondary">Summary</h3>
+          <p>
+            With three years of experience at PayPal and Smallcase and Innovaccer,
+            I've developed strong skills in JavaScript, Java, Golang, and Python and
+            a solid grasp of data structures and algorithms. Additionally, I am
+            familiar with Cloud technologies like AWS S3, Lambda and Frontend frameworks
+            like React.js
+          </p>
+        </div>
+
+        <div class="job job-1">
+          <h3 class="company-name"><i>Smallcase</i></h3>
+          <h6 class="job-title">SDE-2 Backend <div>(Feb 22 - Present)</div></h6>
+          <p>
+            - Developed a REST API wrapper for an existing Node.js library, significantly reducing the number of client
+            deployments by 4 per week to only 1. <br/>
+            - Migrated the SIP creation process to an idempotent set of APIs, reducing inconsistencies between Broker and
+            Smallcase and reducing the overall error rate by around 20 %. <br/>
+            - Led the end-to-end development and design of critical features such as SIP Conversion and Rebalance SIPs which
+            led to around 1.5 lakh new orders in around 10 months. <br/>
+            - Developed a multithreaded script that downloads, parses, and ingests data from a zip file, reducing the previous
+            ingestion time from 6 hours to about 1 hour. <br/>
+            - Developed an AWS Lambda function triggered by SES email events, which retrieves attachments from emails,
+            stores them in a separate S3 bucket, and initiates jobs to ingest and reconcile database records from these
+            attachments. <br/>
+            - Technologies Used - JavaScript, TypeScript, Node.js, Golang, MongoDBh Backend and Frontend sides. - Tech
+            Stack - Java, React.js, MySQL
+          </p>
+        </div>
+        <div class="job job-1">
+          <h3 class="company-name"><i>PayPal</i> </h3>
+          <h6 class="job-title">SDE-1 FullStack <div> (Jan 22 - Feb 23)</div></h6>
+          <p>
+            - Developed and maintained backend Microservices for the Internal Dispute platform.<br/>
+            - reated the front end of the Chargeback Creation Tool using React.js, significantly improving the user interface and
+            streamlining the manual Chargeback process.<br/>
+            - Received the PayPal Spot Award for outstanding performance throughout the quarter.<br/>
+            - Technologies Used - Java, Spring Boot, React.js, SQL, Python.<br/>
+          </p>
+        </div>
+
+        <div class="job job-2">
+          <h3 class="company-name"><i>Innovaccer</i></h3>
+          <h6 class="job-title">SDE-1 Backend <div>(July 21 - Jan 22)</div></h6>
+          <p>
+            - Designed and implemented robust RESTful APIs using Django to support dynamic web applications. <br/>
+            - Technologies Used - Python, Django, PostgreSQL, Docker. <br/>
+          </p>
+        </div>
       </div>
+    </main>
 
-      <div class="job job-2">
-        <h3>Innovaccer</h3>
-        <h6>SDE-1 Backend</h6>
-        <p>
-          - Worked in the Research and Development team of the company.
-          - Developed a POC for Payment Microservice with Stripe as Payment-Gateway.
-          - Tech Stack - Django, PostgreSQL
-        </p>
-      </div>
+    <footer id="main-footer">Copyright &copy; 2019</footer>
 
-      <div class="job job-3">
-        <h3>GirlScript Foundation(Sonipat-Chapter)</h3>
-        <h6>Mentee</h6>
-        <p>
-          Volunteered & organized a 2-days Python BootCamp for the Technology
-          newbies in our state-level university's technical fest, Technova.
-        </p>
-      </div>
-    </div>
-  </main>
-
-  <footer id="main-footer">
-    Copyright &copy; 2019
-  </footer>
-
-  <script src="js/main.js"></script>
-</body>
-
+    <script src="js/main.js"></script>
+  </body>
 </html>
